@@ -2,10 +2,10 @@
 
 Complete this section if you are running the workshop on your own.
 
-- [1. AWS Account Setup](https://github.com/awswa/awsinnovate-temp/blob/main/content/0-Prerequisites/index.md#1-aws-account-setup)
-- [2. IAM User Creation](https://github.com/awswa/awsinnovate-temp/blob/main/content/0-Prerequisites/index.md#2-iam-user-creation)
-- [3. Starting AWS Cloud9 IDE](https://github.com/awswa/awsinnovate-temp/blob/main/content/0-Prerequisites/index.md#3-prepare-aws-cloud9-ide)
-- [4. Amazon EKS Deployment](https://github.com/awswa/awsinnovate-temp/blob/main/content/0-Prerequisites/index.md#4-deploy-amazon-eks-clusters)
+- [1. AWS Account Setup](https://github.com/awswa/implementing-cost-optimization-for-amazon-eks-compute-resources/blob/main/content/0-Prerequisites/index.md#1-aws-account-setup)
+- [2. IAM User Creation](https://github.com/awswa/implementing-cost-optimization-for-amazon-eks-compute-resources/blob/main/content/0-Prerequisites/index.md#2-create-an-iam-user-with-administratoraccess)
+- [3. Starting AWS Cloud9 IDE](https://github.com/awswa/implementing-cost-optimization-for-amazon-eks-compute-resources/blob/main/content/0-Prerequisites/index.md#3-prepare-aws-cloud9-ide)
+- [4. Amazon EKS Deployment](https://github.com/awswa/implementing-cost-optimization-for-amazon-eks-compute-resources/blob/main/content/0-Prerequisites/index.md#4-deploy-amazon-eks-clusters)
 
 # 1. AWS Account Setup
 
