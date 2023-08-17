@@ -1148,7 +1148,7 @@ aws cloudformation delete-stack --stack-name Karpenter-$CLUSTER_NAME
 3. Delete all directories in Cloud9 터미널 상에서 이번 모듈에서 사용했던 디렉토리를 삭제합니다.
 
 ```
-rm -rf ~/environment/2-compute-cost/
+rm -rf ~/environment/
 ```
 
 4. Delete **Amazon EKS** clusters using eksctl.
