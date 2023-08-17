@@ -94,10 +94,6 @@ replicaset.apps/karpenter-76bfbd8887
 
 # 2-2. Use Amazon EC2 Spot Instances for non-mission critical environments
 
-Octank사의 클라우드 엔지니어인 여러분은 최근 비용 절감의 일환으로 미션 크리티컬하지 않은 개발 환경에 대해 온디맨드 대비 최대 90%까지 비용을 절감할 수 있는 **Spot 인스턴스**를 적용하여 비용 최적화를 하고자 합니다. 또한, Octank사에서는 기존에 **Cluster Autoscaler**를 사용하고 있었지만, Node Provisioning 시간을 단축할 수 있는 **Karpenter**를 개발 클러스터에 적용해보고자 합니다. 
-
-현재 Octank의 **Amazon EKS 클러스터**는 개발과 운영이 분리되어 있으며, 개발팀과의 인터뷰를 통해 Octank사의 개발 클러스터가 아래와 같은 특성이 있는 것을 확인하였습니다.
-
 A cloud engineer at Octank has recently decided to optimize costs by implementing **Spot Instances** for non-mission-critical development environments, which can reduce costs by up to 90% compared to on-demand. Octank has been using **Cluster Autoscaler**, but would like to apply **Karpenter** to its development clusters to reduce node provisioning time. 
 
 Currently, Octank's **Amazon EKS clusters** separate development and operations, and we found that Octank's development cluster had the following characteristics through interviews with the development team.
@@ -114,8 +110,6 @@ Currently, Octank's **Amazon EKS clusters** separate development and operations,
 > 2. Is the minimum number of replicas at least 2? Yes
 > 3. Does it use local storage (such as emptyDir)? No
 
-
-위와 같이 개발팀과 인터뷰를 통해 확인한 현재 **Amazon EKS** 개발 클러스터의 특성을 검토한 결과, **Spot 인스턴스**를 적용하기 적합하다는 것을 파악하였습니다. 여러분은 이제 **Karpenter**를 이용해 개발 클러스터에 Spot 인스턴스를 적용해야 합니다.
 
 See the details you need to consider when [using Amazon EC2 Spot Instances with Karpenter] (https://aws.amazon.com/blogs/containers/using-amazon-ec2-spot-instances-with-karpenter/) on an **Amazon EKS cluster**.
 
