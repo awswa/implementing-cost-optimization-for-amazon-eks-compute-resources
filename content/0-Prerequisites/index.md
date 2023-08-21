@@ -438,4 +438,4 @@ cat ~/.kube/config
 ```
 
 > [!NOTE]
-> You have successfuly compelted all prerequisites and click [Cost Visualization for Amazon EKS](../1-EKS-Cost-Visualization/index.md) to continue. :+1: 
+> **Congratulations!** You have successfuly compelted all prerequisites and click [Cost Visualization for Amazon EKS](../1-EKS-Cost-Visualization/index.md) to continue. :+1: 
