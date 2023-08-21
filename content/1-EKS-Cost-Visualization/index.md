@@ -427,7 +427,7 @@ kubectl apply -f ~/environment/1-cost-visualization/deployment.yaml
 (2) Click **Aggregated by** to select **Department** under **Namespace**. You can see the list of department.
 
 > [!NOTE]
-> It may take a few minutes for Kubecost to reflect information about the created resource.
+> It may take a few minutes for Kubecost to reflect information about the created resource. You can come back to this step later on. 
 
 ![Aggregated by Department 1](/static/1-EKS-Cost-Visualization/1-2-Seperate-Team/1-2-aggr-by-dept-1.png)  
 ![Aggregated by Department 2](/static/1-EKS-Cost-Visualization/1-2-Seperate-Team/1-2-aggr-by-dept-2.png)  
