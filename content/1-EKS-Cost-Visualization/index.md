@@ -191,6 +191,7 @@ replicaset.apps/kubecost-prometheus-server-7755c9b669   1         1         1   
 
 14. Configure **IAM role** for the **kubecost** service account. Grant **IAM permissions** to the service account using the **OIDC Provider** for the cluster. Make sure to grant the appropriate permissions to the **kubecost-cost-analyzer** and **kubecost-prometheus-server** service accounts, which are used to send and retrieve metrics from the workspace. From the command line, run the following commands:
 
+[kubecost-cost-analyzer]
 ```
 export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
 
@@ -204,6 +205,7 @@ eksctl create iamserviceaccount \
     --approve
 ```
 
+[kubecost-prometheus-server]
 ```
 eksctl create iamserviceaccount \
     --name kubecost-prometheus-server \
