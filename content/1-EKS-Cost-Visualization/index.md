@@ -932,4 +932,4 @@ rm -rf ~/environment/1-cost-visualization/*
 ```
 
 > [!NOTE]
-> **Congratulations!** You have successfuly compelted EKS Cost Visualization. Click Cost Optimization for Amazon EKS Compute Resources](../2-EKS-Compute-Cost/index.md) to continue. :+1: 
+> **Congratulations!** You have successfuly compelted EKS Cost Visualization. Click [Cost Optimization for Amazon EKS Compute Resources](../2-EKS-Compute-Cost/index.md) to continue. :+1: 
