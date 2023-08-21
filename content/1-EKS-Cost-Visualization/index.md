@@ -19,6 +19,7 @@ In this section, you will [visualize the cost of Amazon EKS using kubecost](http
 ## Sample scenario
 Octank has been using Amazon EKS clusters with multiple departments. The problem with running Amazon EKS was that it was difficult to understand the amount or cost of resources used by each department. Octank wants to know how much EKS resources and costs are being used by each department and manage their budget efficiently using kubecost.
 
+**Objectives**: 
 - **Cost Visualization per department**
 - **Amazon Managed Grafana in combination with kubecost**
 
