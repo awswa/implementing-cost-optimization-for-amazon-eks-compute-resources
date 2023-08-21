@@ -267,7 +267,7 @@ kubectl port-forward deployment.apps/kubecost-cost-analyzer 8080:9090 -n kubecos
 
 ![1-1-Deploy-Kubecost1](/static/1-EKS-Cost-Visualization/1-1-Deploy-Kubecost/1-1-Deploy-Kubecost1.png)
 
-Now you will be able to see **Kubecost Dashboard** from **Cloud9 IDE** as follows:.
+Wait for a couple of minutes and now you will be able to see **Kubecost Dashboard** from **Cloud9 IDE** as follows:.
 
 ![1-1-Deploy-Kubecost2](/static/1-EKS-Cost-Visualization/1-1-Deploy-Kubecost/1-1-Deploy-Kubecost2.png)
 
@@ -425,6 +425,10 @@ kubectl apply -f ~/environment/1-cost-visualization/deployment.yaml
 ![Allocations](/static/1-EKS-Cost-Visualization/1-2-Seperate-Team/1-2-allocations.png)
 
 (2) Click **Aggregated by** to select **Department** under **Namespace**. You can see the list of department.
+
+> [!NOTE]
+> It may take a few minutes for Kubecost to reflect information about the created resource.
+
 ![Aggregated by Department 1](/static/1-EKS-Cost-Visualization/1-2-Seperate-Team/1-2-aggr-by-dept-1.png)  
 ![Aggregated by Department 2](/static/1-EKS-Cost-Visualization/1-2-Seperate-Team/1-2-aggr-by-dept-2.png)  
 
@@ -433,8 +437,6 @@ kubectl apply -f ~/environment/1-cost-visualization/deployment.yaml
 
 ![Aggregated by Department 3](/static/1-EKS-Cost-Visualization/1-2-Seperate-Team/1-2-aggr-by-dept-3.png)
 
-> [!NOTE]
-> It may take a few minutes for Kubecost to reflect information about the created resource.
 
 > [!NOTE]
 > You can learn more about the Kubecost Allocations Dashboard [here](https://docs.kubecost.com/using-kubecost/navigating-the-kubecost-ui/cost-allocation). For more information about Kubecost, please refer to the [Kubecost official documentation](https://docs.kubecost.com/).
@@ -492,6 +494,9 @@ A workspace is a logical Grafana server. You can have as many as five workspaces
 ![1-3-Create-Dashboard6](/static/1-EKS-Cost-Visualization/1-3-Create-Dashboard/1-3-Create-Dashboard6.jpg)
 
 ## Configure Keycloak as IDP for SAML
+
+> [!NOTE]
+> Make sure your workspace named **demogo-eks-grafana** was successfully created first before you start the following steps. 
 
 6. In **Cloud9 IDE** terminal, set the following environment variables.
 
@@ -690,7 +695,7 @@ EOF
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ```
 
-12. Install **keycloak** using **helm**.
+12. Install **keycloak** using **helm**. It may take a few minutes.
 
 ```
 helm install keycloak bitnami/keycloak \
@@ -813,7 +818,7 @@ Password: 4WYpYZq7aQk=
 
 ![1-3-Create-Dashboard11](/static/1-EKS-Cost-Visualization/1-3-Create-Dashboard/1-3-Create-Dashboard11.jpg)
 
-20.  Click **Sign in with SAML**. Provide `admin` as Username and password.
+20.  Click **Sign in with SAML**. Provide `admin` as Username and password. It may take a few minutes to see the login prompt. 
 
 * Username : admin
 
@@ -927,6 +932,4 @@ rm -rf ~/environment/1-cost-visualization/*
 ```
 
 > [!NOTE]
-> Click [EKS 컴퓨팅 비용 최적화](../2-EKS-Compute-Cost/index.md) to continue. :+1: 
-
-Click [Cost Optimization for Amazon EKS Compute Resources](../2-EKS-Compute-Cost/index.md) to start the next lab.
+> **Congratulations!** You have successfuly compelted EKS Cost Visualization. Click Cost Optimization for Amazon EKS Compute Resources](../2-EKS-Compute-Cost/index.md) to continue. :+1: 
